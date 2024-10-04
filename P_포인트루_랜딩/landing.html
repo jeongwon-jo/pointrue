@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포인트루</title>
+  <!-- Favicon -->
+  <link rel="icon" href="./_img/common/logo.svg">
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="./_css/landing.css">
+</head>
+<body>
+  <div id="page-wrap">
+    <div id="contents-wrap">
+      <!-- 좌측 배너 영역 -->
+      <div class="pointrue_banner">
+        <div class="banner__inner">
+          <h1>
+            <span>포인트루</span>는 소상공인을 위한
+            최고의 플랫폼이 되기 위해
+            한걸음, 한걸음 나아가고 있습니다.
+          </h1>
+          <ul class="history">
+            <li>
+              <span class="date">2023년 5월</span>
+              <p>
+                초기창업패키지 사업 대상기업 선정<br>
+                <span class="light">(중소벤처기업부와 창업진흥원)</span>
+              </p>
+            </li>
+            <li>
+              <span class="date">2023년 12월</span>
+              <p>특허 출원 5개</p>
+            </li>
+            <li>
+              <span class="date">2021년~22년</span>
+              <p>
+                와디즈 크라우드 펀딩 성공<br>
+                <span class="light">(1차 489%, 2차 316%)</span>
+              </p>
+            </li>
+          </ul>
+          <div class="video_area">
+            <iframe src="https://www.youtube.com/embed/vlgd42j5oZo?si=sRiTbuRoNJslfWun&amp;controls=0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- 우측 콘텐츠 영역 -->
+      <div class="container">
+        <header id="header">
+          <div class="banner">
+            <div class="banner__contents">
+              <span>[오픈기념] 지금 가입하고, 50% 할인 받으세요!</span>
+              <button type="button" class="btn_close" onclick="closeBanner()"></button>
+            </div>
+          </div>
+          <div class="header__inner">
+            <div class="logo">
+              <span class="logo_icon"></span>
+              <h6>pointrue</h6>
+            </div>
+          </div>
+        </header>
+        <main id="main">
+          <section class="main_sec1">
+            <div class="sec1__inner">
+              <div class="sec1_title">
+                <div class="title">
+                  <h2><span class="typing"></span>를 위한</h2>
+                  <h1 class="bold">돈 버는 쇼핑몰 <span>포인트루</span></h1>
+                </div>
+                <p class="sub_title">구독자와 팔로워를 내 고객으로!<br>
+                  쇼핑몰과 강의플랫폼을 하나로!
+                </p>
+                <div class="start">
+                  <a href="#" class="btn_start">지금 시작하기</a>
+                </div>
+              </div>
+              <div class="main_slide-mockup">
+                <div class="main_img_slider">
+                  <div class="rolling">
+                    <img src="./_img/main_slide_img.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="intro_pointrue">
+                <div class="tit">
+                  <span>동영상으로 간편하게!</span>
+                  <h1>포인트루를 소개합니다</h1>
+                </div>
+                <div class="video_area">
+                  <iframe src="https://www.youtube.com/embed/vlgd42j5oZo?si=sRiTbuRoNJslfWun&amp;controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="intro_pointrue-info">
+                <div class="tit">
+                  <h3>
+                    언제까지 구독자, 팔로워만 늘릴건가요?<br>
+                    늘어난 구독자, 팔로워로 이익이 증가 하셨나요?
+                  </h3>
+                  <p>
+                    대부분의 유튜브, 인플루언서는
+                    <span class="fw500">
+                      구독자, 팔로워의
+                      증가가 이익의 증가로 이어지지 않고 있습니다.
+                    </span>
+                  </p>
+                </div>
+                <div class="desc">
+                  <h3>포인트루 쇼핑몰(샵)에서는?</h3>
+                  <div class="pointrue_ad">
+                    <h4>구독자에게 카톡광고 발송 솔루션 제공</h4>
+                    <p>
+                      SNS의 구독자, 팔로워를 카톡채널 친구추가
+                      방식으로 내 고객으로 전환하여 <span class="black">마음껏 카톡광고
+                        메시지를 보낼 수 있습니다.</span>
+                    </p>
+                  </div>
+                  <div class="pointrue_ad">
+                    <h4>콘텐츠 기반의 판매 가능</h4>
+                    <p>
+                      <span class="black">쇼핑몰 기능</span>(상품판매) <span class="black">인터넷 학원 기능</span> (동영상 판매•시청) <span
+                        class="black">모두 제공하여 유튜브 콘텐츠로 홍보하고 상품</span>(강의) <span class="black">을 판매할 수 있습니다.</span>
+                    </p>
+                  </div>
+                  <p class="final">
+                    유튜브 <span class="point">구독자를 구매자로 순식간에 전환</span>하여
+                    <span class="black">이익이 폭발적으로 증가하는 경험을 체험해 보세요!</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main_sec2">
+            <div class="sec2__inner">
+              <div class="title">
+                <h1>
+                  포인트루의<br>
+                  놀라운 장점 <span class="point">4가지!</span>
+                </h1>
+                <p>
+                  7년의 온라인 판매 경험을 바탕으로 수많은<br>
+                  시행착오 끝에 영혼을 갈아넣어 제대로 만들었습니다.
+                </p>
+              </div>
+              <div class="sec2-tab__inner">
+                <div class="sec2__tabs">
+                  <div class="title">
+                    <h2>
+                      <span class="num">1.</span>
+                      마케팅 수신동의가 이렇게 쉬웠나?
+                    </h2>
+                    <p class="subtitle1">
+                      최고의 마케팅 수신동의는 카톡채널 친구추가
+                    </p>
+                  </div>
+                  <div class="tab__contents">
+                    <div id="tab1_1" class="advant__content">
+                      <div class="img__inner advadtage1_1">
+                        <img src="./_img/advantage1_1.png" alt="">
+                        <a href="#" class="btn_buy">구매하기</a>
+                      </div>
+                    </div>
+                    <div id="tab1_2" class="advant__content">
+                      <div class="img__inner advadtage1_2">
+                        <div class="img_content">
+                          <img src="./_img/advantage1_2.png" alt="">
+                          <a href="#" class="btn_add"></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="tab1_3" class="advant__content">
+                      <div class="img__inner advadtage1_3">
+                        <div class="img_content">
+                          <img src="./_img/advantage1_3.png" alt="">
+                          <span>친구 <small id="count">136,234</small></span>
+                        </div>
+                      </div>
+                    </div>
+                    <ul id="tab_1" class="tabs tabs_1">
+                      <li class="tabs__link on" data-tab="tab1_1">상품 주문</li>
+                      <li class="tabs__link" data-tab="tab1_2">마케팅 수신동의</li>
+                      <li class="tabs__link" data-tab="tab1_3">카톡친구 증가</li>
+                    </ul>
+                  </div>
+                  <div class="sec2_tabs--info">
+                    <p>
+                      고객이 상품을 주문하면 카톡채널 친구추가 창이 뜨고
+                      동의하면 카톡친구 추가 되어 카톡 메시지를 마음껏 보낼 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="sec2__tabs">
+                  <div class="title">
+                    <h2>
+                      <span class="num">2.</span>
+                      고객에게 카톡 광고 메시지를<br>
+                      착착착 자동으로 보낸다?
+                    </h2>
+                    <p class="subtitle1">
+                      사전에 설정한 시나리오에 따라 추가 매출을 위한<br>
+                      카톡 광고 메시지를 순차적으로 발송
+                    </p>
+                  </div>
+                  <div class="tab__contents">
+                    <div id="tab2_1" class="advant__content">
+                      <div class="img__inner advantage2_1">
+                        <img src="./_img/advantage2_1.png" alt="">
+                      </div>
+                    </div>
+                    <div id="tab2_2" class="advant__content">
+                      <div class="img__inner advantage2_2">
+                        <div class="img_content">
+                          <img src="./_img/advantage2_2.png" alt="">
+                          <a href="#" class="btn_buy">구매하기</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="tab2_3" class="advant__content">
+                      <div class="img__inner advantage2_3">
+                        <div class="mockup">
+                          <img src="./_img/advantage2_3_mockup.png" alt="">
+                          <div class="comment">
+                            <div class="comment_inner">
+                              <img src="./_img/advantage2_3_kakao.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <ul id="tab_2" class="tabs tabs_2">
+                      <li class="tabs__link on" data-tab="tab2_1">시나리오 설정</li>
+                      <li class="tabs__link" data-tab="tab2_2">고객 주문</li>
+                      <li class="tabs__link" data-tab="tab2_3">카톡 메시지 자동 발송</li>
+                    </ul>
+                  </div>
+                  <div class="sec2_tabs--info">
+                    <p>
+                      특정 상품에 대한 메시지 시나리오를 작성하고, 해당 상품을 고객이 주문하면 시나리오에 따라 광고 메시지가 착착착 발송 됩니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="sec2__tabs third_tabs">
+                  <div class="title">
+                    <h2>
+                      <span class="badge">특허출원</span>
+                      <span class="num">3.</span>
+                      내 고객이 상담만 받아도<br>
+                      매출이 쑥쑥 올라간다고?
+                    </h2>
+                    <p class="subtitle1">
+                      내 고객이 광고주에게 상담을 신청하면 광고주가 포인트를 주고, 해당 포인트는 내 쇼핑몰에서만 사용할 수 있음
+                    </p>
+                  </div>
+                  <div class="img__inner advantage3">
+                    <div class="img_content">
+                      <div class="img_wrap">
+                        <img src="./_img/advantage3_left.png" alt="">
+                      </div>
+                      <span>내 쇼핑몰<br /> 매출증가</span>
+                    </div>
+                  </div>
+                  <div class="tab__contents">
+                    <ul id="tab_3" class="tabs tabs_3">
+                      <li class="tabs__link on" data-tab="tab3_1">상담포인트 장점 1</li>
+                      <li class="tabs__link" data-tab="tab3_2">상담포인트 장점 2</li>
+                      <li class="tabs__link" data-tab="tab3_3">상담포인트 장점 3</li>
+                    </ul>
+                    <div id="tab3_1" class="advant__content text">
+                      <div class="text_content">
+                        <p>
+                          기존 오픈마켓에서는 포인트를 받으면 오픈마켓 내의 어떤 스토어에서도 쓸 수 있는 반면, 포인트루는 포인트를 받은 쇼핑몰에서만 사용할 수 있어 <span>내 쇼핑몰에서 내
+                            고객이 포인트를 받으면 내 쇼핑몰 에서만 구매가 발생</span>하고
+                          매출 증가
+                        </p>
+                      </div>
+                    </div>
+                    <div id="tab3_2" class="advant__content text">
+                      <div class="text_content">
+                        <p>
+                          상담 포인트는 고객이 광고주(보험,상조, 인터넷)와 상담하면 광고주가 포인트를 제공하므로 쇼핑몰 사장님은 <span>마진 손해 없이 고객에게 상품을 할인</span>해
+                          줄 수 있음
+                        </p>
+                      </div>
+                    </div>
+                    <div id="tab3_3" class="advant__content text">
+                      <div class="text_content">
+                        <p>
+                          중소형 쇼핑몰은 고객수가 작아 대형 광고주와 컨택하여 광고를 진행하기 어려우나 포인트루 서비스는 <span>중소형 쇼핑몰을 연합하여 적정수준의 고객수 확보로 대형광고주가
+                            내 쇼핑몰에 입점</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sec2__tabs">
+                  <div class="title">
+                    <h2>
+                      <span class="num">4.</span>
+                      쇼핑몰인데 강의 플랫폼 까지<br>
+                      하나에서 다 된다고?
+                    </h2>
+                    <p class="subtitle1">
+                      일반 배송상품 판매는 물론, 동영상 강의/라이브 강의
+                      /오프라인 강의를 판매하고 동영상 시청기능 제공
+                    </p>
+                  </div>
+                  <div class="tab__contents">
+                    <div id="tab4_1" class="advant__content ">
+                      <div class="img__inner advantage4_1">
+                        <div class="img_content">
+                          <img src="./_img/advantage4_1.png" alt="">
+                          <span class="advantage_badge">Off-line</span>
+                          <span class="advantage_badge">Live</span>
+                          <span class="advantage_badge">VOD</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="tab4_2" class="advant__content ">
+                      <div class="img__inner advantage4_2">
+                        <img src="./_img/advantage4_2.png" alt="">
+                      </div>
+                    </div>
+                    <div id="tab4_3" class="advant__content ">
+                      <div class="img__inner advantage4_3">
+                        <img src="./_img/advantage4_3.png" alt="">
+                      </div>
+                    </div>
+                    <ul id="tab_4" class="tabs tabs_4">
+                      <li class="tabs__link on" data-tab="tab4_1">강의 구매</li>
+                      <li class="tabs__link" data-tab="tab4_2">수강 알림</li>
+                      <li class="tabs__link" data-tab="tab4_3">내강의실 입장</li>
+                    </ul>
+                  </div>
+                  <div class="sec2_tabs--info">
+                    <p>
+                      고객이 강의상품(VOD/LIVE,오프라인 미팅)을 신청하면
+                      내 강의실에서 해당 강의를 수강할 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main_sec3">
+            <div class="sec3__inner">
+              <div id="purple_content" class="purple__content">
+                <div class="title">
+                  <h4>사장님~!</h4>
+                  <h1>오픈특가 <span class="active">월 8,670원</span>&nbsp;의<br>
+                    혜택을 놓치지 마세요!</h1>
+                </div>
+                <div class="marketing_badge">
+                  <img src="./_img/marketing_img.png" alt="마케팅 말풍선 이미지">
+                </div>
+                <div class="sec3_open">
+                  <h4>
+                    <span class="fw500">오픈기념</span>으로 <span class="fw700">연간 사용료 10만원</span> (정상가의 50% 할인)<br>
+                    <span class="fw500">의 혜택</span>을 오직 <span class="fw500">100분에게만 드립니다!</span><br><br>
+                    <span class="fw500">이번 기회를 놓치지 마세요.</span><br>
+                    4월 1일 이후 정상가로 판매 됩니다.
+                  </h4>
+                  <div class="open">
+                    <a href="#" class="btn_open"><span>오픈특가 신청</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="sec3_cost">
+                <div class="cost month">
+                  <div class="tit">월 결제</div>
+                  <div class="desc">
+                    <div class="cost_value">
+                      <h1>30,000원</h1>
+                    </div>
+                    <p class="vat">∙ 모든 금액은 VAT 별도</p>
+                    <a href="#" class="btn_start">지금 시작하기</a>
+                  </div>
+                </div>
+                <div class="cost year">
+                  <span class="discount">44% 할인</span>
+                  <div class="tit">연 결제</div>
+                  <div class="desc">
+                    <div class="cost_value">
+                      <s>360,000원</s>
+                      <h1>200,000원</h1>
+                      <span>(월 환산: 16,670원)</span>
+                    </div>
+                    <p class="vat">∙ 모든 금액은 VAT 별도</p>
+                    <a href="#" class="btn_start">지금 시작하기</a>
+                  </div>
+                </div>
+                <div class="cost_open">
+                  <h1>4월 1일 이후 정상가 오픈!</h1>
+                </div>
+              </div>
+              <div class="function_list">
+                <div class="main_func">
+                  <ul>
+                    <li>쇼핑몰+강의 플랫폼(VOD,라이브,오프라인 미팅)</li>
+                    <li>주문과 동시에 카톡채널 추가(마케팅 수신동의)</li>
+                    <li>시나리오에 따라 카톡 광고 메시지 자동발송</li>
+                    <li>광고주와 상담후 포인트를 받아 할인구매하는 포인트 마케팅</li>
+                    <li>공급사 위탁 판매기능</li>
+                    <li>가입시 사업자등록증과 통장사본이 필수 입니다.</li>
+                  </ul>
+                </div>
+                <button type="button" class="btn_fold fold">
+                  <span class="fold">모든 기능 접기</span>
+                  <span class="open">모든 기능 펼치기</span>
+                </button>
+                <div class="detail_func">
+                  <div class="func">
+                    <h5>기능</h5>
+                    <ul>
+                      <li>해당 내용해당 내용해당 내용해당 내용해당 내용해당 내용해당 내용해당 내용해당 내용해당 내용해당 내용해당 내용해당 내용</li>
+                      <li>해당 내용</li>
+                      <li>해당 내용</li>
+                      <li>해당 내용</li>
+                    </ul>
+                  </div>
+                  <div class="func">
+                    <h5>디자인</h5>
+                    <ul>
+                      <li>해당 내용</li>
+                      <li>해당 내용</li>
+                      <li>해당 내용</li>
+                      <li>해당 내용</li>
+                    </ul>
+                  </div>
+                  <div class="func">
+                    <h5>운영</h5>
+                    <ul>
+                      <li>해당 내용</li>
+                      <li>해당 내용</li>
+                      <li>해당 내용</li>
+                      <li>해당 내용</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="notice_list">
+                  <p class="title">유의사항</p>
+                  <ul>
+                    <li>위 가격은 1년 약정 계약으로 중도 해지시, 환급금은 할인 전 서비스 이용료 기준으로 차감 후 지급 됩니다.(자세한 사항은 이용약관 참조)</li>
+                    <li>알림톡 및 문자 발송 비용은 별도 (알림톡 O원/건, 친구톡 O원/건)</li>
+                    <li>PG 통합결제 가입비 무료</li>
+                    <li>PG 가입을 위한 보증보험 가입 필요</li>
+                    <li>PG 결제 수수료 : 카드 3.2%, 간편결제 3.3%, 가상계좌 250원/건</li>
+                    <li>포인트루 판매 수수료 없음</li>
+                    <li>사업자등록증 및 브랜드의 카톡채널 비즈니스 승인 필수</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main_sec4">
+            <div class="sec4__inner">
+              <div class="title">
+                <h1>더 궁금한 점이 있으신가요?</h1>
+              </div>
+              <div class="faq__inner">
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>상품 미도착 접수가 무엇인가요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다. 특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                      <br><br>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다.
+                      <br><br>
+                      특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>상품 미도착 접수가 무엇인가요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다. 특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                      <br><br>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다.
+                      <br><br>
+                      특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>상품 미도착 접수가 무엇인가요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다. 특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                      <br><br>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다.
+                      <br><br>
+                      특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>상품 미도착 접수가 무엇인가요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다. 특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                      <br><br>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다.
+                      <br><br>
+                      특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>상품 미도착 접수가 무엇인가요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다. 특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                      <br><br>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다.
+                      <br><br>
+                      특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>상품 미도착 접수가 무엇인가요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다. 특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                      <br><br>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다.
+                      <br><br>
+                      특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>상품 미도착 접수가 무엇인가요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다. 특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                      <br><br>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다.
+                      <br><br>
+                      특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>상품 미도착 접수가 무엇인가요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다. 특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                      <br><br>
+                      로그인 후 마이페이지 > 개인정보관리에서 비밀번호 재확인 후 변경 가능합니다.
+                      <br><br>
+                      특히, 상품배송과 관련 있는 거주지나 연락처가 변경 되신 경우 반드시 수정해 주시기 바랍니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer id="footer">
+          <div class="footer__inner">
+            <div class="scroll-top">
+              <span>TOP</span>
+            </div>
+            <div class="ft_info">
+              <div class="ft_top">
+                <div class="ft_logo">
+                  <h5>포인트루</h5>
+                  <a href="#" class="btn_consult">카카오톡 1:1 상담</a>
+                </div>
+                <ul class="ft_menu">
+                  <li><a href="#">서비스 이용약관</a></li>
+                  <li><a href="#">개인정보 처리방침</a></li>
+                  <li><a href="#">사업자정보확인</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn_open_company">
+                <span>고마워브라더(주) 사업자정보</span>
+              </button>
+            </div>
+            <div class="ft_company-info">
+              <ul class="customer_center">
+                <li>고객센터 : 1000-0000</li>
+                <li>운영시간 : 평일 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00) (토요일, 공휴일은 휴무)</li>
+              </ul>
+              <ul class="company_info">
+                <li>주소 : 경상남도 양산시 주남로 288 3207호</li>
+                <li>회사명 : 고마워브라더(주)</li>
+                <li>대표 : 최성민</li>
+                <li>사업자등록번호 : 175-81-02316</li>
+                <li>통신판매업신고 : 제2021-서울서초-2099호</li>
+                <li>개인정보 책임자 : 홍길동</li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 타이핑 애니메이션
+    const content = "유튜버•인플루언서";
+    const text = document.querySelector(".typing");
+    let i = 0;
+
+    function typing() {
+      if (i < content.length) {
+        let txt = content.charAt(i);
+        text.innerHTML += txt;
+        i++;
+      }
+
+      if(i == content.length) {
+        clearInterval(typing)
+      }
+    }
+
+    setInterval(typing, 200)
+
+    $(function () {
+      // 푸터 사업자정보 버튼
+      $('.btn_open_company').click(function () {
+        $('#contents-wrap').toggleClass('ft_open')
+        $(this).parent().siblings('.ft_company-info').slideToggle()
+        $("html, body").animate({ scrollTop: $(document).height() }, 500);
+      })
+
+      // 푸터 scrolltop
+      $("#footer .scroll-top").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 500);
+      });
+
+      // 지금 시작하기 버튼 클릭시 스크롤 이동
+      $('.sec1__inner .start .btn_start').click(function() {
+        var openOffset = $(".sec3_cost .cost_open").offset();
+        $("html, body").animate({ scrollTop: openOffset.top - 150 }, 1000); 
+      })
+
+      // 상단 배너 클릭시 스크롤 이동
+      $('#header .banner__contents').click(function() {
+        var purpleOffset = $("#purple_content").offset();
+        $("html, body").animate({ scrollTop: purpleOffset.top - 150 }, 1000); 
+      })
+
+      // Section2 이미지 탭
+      $('.tab__contents .advant__content:nth-of-type(1)').show()
+
+      $('ul.tabs li.tabs__link').click(function () {
+        let index = $(this).parent().attr('id').split('_')[1];
+
+        switch(index){
+          case "1" : 
+            clearInterval(liTimer1);
+            break;
+          case "2":
+            clearInterval(liTimer2);
+            break;
+          case "3":
+            clearInterval(liTimer3);
+            break;
+          case "4":
+            clearInterval(liTimer4);
+            break;
+        }
+
+        var tab_id = $(this).attr('data-tab');
+
+        $(this).siblings().removeClass('on');
+        $(this).parents('ul.tabs').siblings().hide();
+
+        $(this).addClass('on');
+        $("#" + tab_id).fadeIn();
+
+        let countBox = document.querySelector('#count');
+        countBox.classList.remove('active')
+        let count = 0;
+        let num = 136234;
+
+        if(tab_id == 'tab1_3') {
+          let counting = setInterval(function () {
+            if (count >= num) {
+              count = num;
+              clearInterval(counting);
+            } else {
+              count += 700;
+            }
+
+            if (count >= 70000) {
+              countBox.classList.add('active')
+            } else {
+              countBox.classList.remove('active')
+            }
+            countBox.innerHTML = new Intl.NumberFormat().format(count);
+          }, 10);
+        } else if(tab_id == 'tab2_3') {
+          $('.img__inner.advantage2_3 .mockup .comment img').addClass('active')
+        }
+      })
+
+      // Section3 모든 기능 접기
+      $('.function_list .btn_fold').click(function () {
+        $(this).toggleClass('fold')
+        $('.detail_func').slideToggle()
+      })
+
+      // Section4 FAQ 슬라이드
+      $('.faq_quest').click(function () {
+        $('.faq_answer').not($(this).siblings()).slideUp()
+        $(this).siblings().slideToggle()
+
+        $('.faq_quest').not($(this)).removeClass('active')
+        $(this).toggleClass('active')
+      })
+    })
+
+    function closeBanner() {
+      $('#header .banner').hide()
+    }
+
+    // 탭 3초마다 롤링 (카카오 관련 빼고)
+    let liTimer1 = setInterval(function() {
+      intervalLi1()
+    }, 3000)
+
+    let liTimer2 = setInterval(function () {
+      intervalLi2()
+    }, 3000)
+
+    let liTimer3 = setInterval(function () {
+      intervalLi3()
+    }, 3000)
+
+    let liTimer4 = setInterval(function () {
+      intervalLi4()
+    }, 3000)
+
+    let tabs1Index = 1;
+    function intervalLi1() {
+      tabs1Index = tabs1Index + 1;
+      
+      $(`.tabs_1 .tabs__link`).removeClass('on');
+      $('ul.tabs.tabs_1').siblings().hide();
+
+      $(`.tabs_1 .tabs__link:nth-child(${tabs1Index})`).addClass('on');
+      $("#tab1_" + tabs1Index).fadeIn();
+
+      let countBox = document.querySelector('#count');
+      countBox.classList.remove('active')
+      let count = 0;
+      let num = 136234;
+
+
+      if(tabs1Index == 3) {
+        let counting = setInterval(function () {
+          if (count >= num) {
+            count = num;
+            clearInterval(counting);
+          } else {
+            count += 700;
+          }
+
+          if (count >= 70000) {
+            countBox.classList.add('active')
+          } else {
+            countBox.classList.remove('active')
+          }
+          countBox.innerHTML = new Intl.NumberFormat().format(count);
+        }, 10);
+      }
+
+      if (tabs1Index == 3) {
+        tabs1Index = 0
+      }
+    }
+
+    let tabs2Index = 1;
+    function intervalLi2() {
+      tabs2Index = tabs2Index + 1;
+
+      $(`.tabs_2 .tabs__link`).removeClass('on');
+      $('ul.tabs.tabs_2').siblings().hide();
+
+      $(`.tabs_2 .tabs__link:nth-child(${tabs2Index})`).addClass('on');
+      $("#tab2_" + tabs2Index).fadeIn();
+
+      if(tabs2Index != 3) {
+        $('.img__inner.advantage2_3 .mockup .comment img').removeClass('active')
+        clearInterval(liTimer2)
+        liTimer2 = null
+        liTimer2 = setInterval(intervalLi2, 3000)
+      } else {
+        tabs2Index = 0
+        clearInterval(liTimer2)
+        liTimer2 = null
+        liTimer2 = setInterval(intervalLi2, 7000)
+
+        $('.img__inner.advantage2_3 .mockup .comment img').addClass('active')
+      }
+    }
+
+    let tabs3Index = 1;
+    function intervalLi3() {
+      tabs3Index = tabs3Index + 1;
+
+      $(`.tabs_3 .tabs__link`).removeClass('on');
+      $('ul.tabs.tabs_3').siblings().hide();
+
+      $(`.tabs_3 .tabs__link:nth-child(${tabs3Index})`).addClass('on');
+      $("#tab3_" + tabs3Index).fadeIn();
+
+      if (tabs3Index == 3) {
+        tabs3Index = 0
+      }
+    }
+
+    let tabs4Index = 1;
+    function intervalLi4() {
+      tabs4Index = tabs4Index + 1;
+
+      $(`.tabs_4 .tabs__link`).removeClass('on');
+      $('ul.tabs.tabs_4').siblings().hide();
+
+      $(`.tabs_4 .tabs__link:nth-child(${tabs4Index})`).addClass('on');
+      $("#tab4_" + tabs4Index).fadeIn();
+
+      if (tabs4Index == 3) {
+        tabs4Index = 0
+      }
+    }
+
+
+    function checkVisible(element, check = 'above') {
+      const viewportHeight = $(window).height();
+      const scrolltop = $(window).scrollTop();
+      const y = $(element).offset().top;
+      const elementHeight = $(element).height();
+
+      if (check == "visible")
+        return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+
+      if (check == "above")
+        return ((y < (viewportHeight + scrolltop)));
+    }
+
+    const func = function () {
+      if (checkVisible('.sec2-tab__inner .sec2__tabs.third_tabs')) {
+        $('.img__inner.advantage3 .img_content').addClass('active')
+      } else {
+        $('.img__inner.advantage3 .img_content').removeClass('active')
+      }
+    }
+
+    window.addEventListener('scroll', func);
+    
+  </script>
+</body>
+</html>

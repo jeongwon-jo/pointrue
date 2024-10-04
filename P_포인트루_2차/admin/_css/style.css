@@ -1,0 +1,736 @@
+@charset "UTF-8";
+/* 관리자 레이아웃 */
+.admin_appbar {
+  position: fixed;
+  width: 100%;
+  height: 54px;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #E5E4E4;
+  background-color: #fff;
+}
+
+.appbar__inner {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin_appbar .logo {
+  width: 148px;
+  height: auto;
+}
+
+.admin_appbar .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.admin_appbar .appbar_info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.appbar_info .connection {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.appbar_info .connection img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.appbar_info .connection span {
+  font-size: 12px;
+  line-height: 15px;
+  color: #3D3E43;
+}
+
+.appbar_info .connection span b {
+  font-weight: 500;
+}
+
+.appbar_info .appbar_link {
+  font-size: 12px;
+  line-height: 15px;
+  color: #3D3E43;
+}
+
+.appbar_info .appbar_link.logout span {
+  padding-left: 20px;
+  position: relative;
+}
+
+.appbar_info .appbar_link.logout span:before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -8px;
+  background: url(../_img/icon_logout.svg) no-repeat center center / contain;
+}
+
+.admin_content {
+  padding-top: 54px;
+}
+
+#page-content .cardbox {
+  overflow-x: auto;
+}
+
+/* Sidebar */
+.admin_sidebar_tit {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #4D21A1;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.admin_sidebar .profile {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.admin_sidebar .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sidebar_accordion .accordion-control {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  height: 50px;
+  border-bottom: 1px solid #F0F0FA;
+  text-align: left;
+}
+
+.sidebar_accordion .accordion-control:hover {
+  background-color: #FAF9FF;
+}
+
+.sidebar_accordion .accordion-panel {
+  background-color: #FAF9FF;
+  padding: 0 18px;
+  text-align: left;
+  font-weight: 400;
+}
+
+/* breadcrumb */
+.breadcrumb {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Menu Title */
+.menu_title h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 31px;
+  color: #000;
+}
+
+.text_primary {
+  color: #632ACF;
+}
+
+/* 관리자 Common */
+/* BTN */
+.btn_md {
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+}
+
+.btn_add span {
+  position: relative;
+  padding-left: 24px;
+}
+
+.btn_add span:before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../_img/icon_plus.svg) no-repeat center center / contain;
+}
+
+.btn_primary_600 {
+  background-color: #632ACF;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.btn_primary {
+  background-color: #8152DB;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.btn_primary_outline {
+  background-color: #fff;
+  color: #8152DB;
+  border: 1px solid #8152DB;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.btn_primary_400 {
+  background-color: #B08DFC;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.btn_primary_400_outline {
+  background-color: #fff;
+  color: #B08DFC;
+  border: 1px solid #B08DFC;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.btn_primary_300 {
+  background-color: #CFB9FD;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.btn_gray_300 {
+  background-color: #E5E4E5;
+  color: #747474;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.btn_gray_400 {
+  background-color: #B9B8BD;
+  color: #222;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.btn_gray_outline {
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #E5E5EB;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.btn_red {
+  background-color: #F95139;
+  color: #fff;
+  border: 1px solid #F95139;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.btn_red_outline {
+  background-color: #fff;
+  color: #F95139;
+  border: 1px solid #F95139;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.total_cnt {
+  font-size: 16px;
+  color: #4d4d4d;
+}
+
+.total_cnt b {
+  font-weight: 600;
+  color: #8152DB;
+}
+
+.max_width_80p {
+  max-width: 80%;
+}
+
+.max_width_87p {
+  max-width: 87%;
+}
+
+.width_1400 {
+  width: 1400px;
+}
+
+.info_txt {
+  font-size: 13px;
+  color: #605F67;
+}
+
+/* 검색 */
+.search_box.row_1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search_box .search_cnts {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.search_input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search_multiple_box .search_select {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 14px;
+  min-height: 32px;
+}
+
+.search_multiple_box .search_select:last-child {
+  margin-bottom: 0px;
+}
+
+.search_multiple_box .search_select .srch_ttl {
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: #3D3E43;
+  padding-top: 2px;
+  min-width: 85px;
+}
+
+.w_200px {
+  width: 200px;
+}
+
+.w_300px {
+  width: 300px;
+}
+
+.min-width_45px{
+  min-width: 45px;
+}
+
+.gap47 {
+  gap: 47px;
+}
+
+.gap58 {
+  gap: 58px;
+}
+
+/* Common Form */
+.admin_input {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #E5E5EB;
+  border-radius: 5px;
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+.admin_input.w_200px {
+  width: 200px !important;
+}
+
+.admin_input.w_300px {
+  width: 300px !important;
+}
+
+.admin_input:read-only,
+.admin_input:disabled {
+  background-color: #E5E5EB;
+}
+
+.admin_input[type=file] {
+  font-size: 14px;
+  color: #605F67;
+}
+
+.admin_textarea {
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 12px;
+  border: 1px solid #E5E5EB;
+}
+
+.admin_input::file-selector-button {
+  background-color: #8152DB !important;
+}
+
+.date-select input[type=text] {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #E5E5EB;
+  border-radius: 5px;
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+.admin_select {
+  background-color: #fff;
+  border: 1px solid #E5E5EB;
+  padding: .5rem 2rem .5rem 12px;
+}
+
+.admin_select.md {
+  height: 40px;
+}
+
+.admin_select option {
+  background-color: #fff;
+  color: #222;
+}
+
+.admin_radio_group {
+  border: 1px solid #8151DB;
+  background-color: #FAF9FF;
+}
+
+.admin_radio_group .radio-item.variant-filled-primary {
+  background-color: #8151DB;
+}
+
+/* Custom Radio */
+.radio--typeA {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  color: #2A2A2E;
+  line-height: 26px;
+}
+
+.radio--typeA label {
+  display: flex;
+  align-items: center;
+}
+
+.radio--typeA input[type=radio] {
+  display: none;
+}
+
+.radio--typeA input[type=radio]+em {
+  display: inline-block;
+  flex-basis: 18px;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  font-style: normal;
+  border-radius: 50%;
+  background: url(../_img/icon_radio.svg) no-repeat center center / contain;
+  margin-right: 8px;
+}
+
+.radio--typeA input[type=radio]:checked+em {
+  background: url(../_img/icon_radio_active.svg) no-repeat center center / contain;
+}
+/* Checkbox */
+.checkbox--typeA {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  color: #2A2A2E;
+  line-height: 26px;
+}
+
+.checkbox--typeA label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox--typeA input[type=checkbox] {
+  display: none;
+}
+
+.checkbox--typeA input[type=checkbox]+em {
+  display: inline-block;
+  flex-basis: 20px;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  font-style: normal;
+  background: url(../_img/icon_checkbox.svg) no-repeat center center / contain;
+  margin-right: 8px;
+}
+
+.checkbox--typeA input[type=checkbox]:checked+em {
+  background: url(../_img/icon_checkbox_active.svg) no-repeat center center / contain;
+}
+
+/* Common Table */
+.admin_table thead th {
+  background-color: #FBFBFB;
+  height: 45px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding: 0 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.admin_table tbody td {
+  background-color: #fff;
+  text-align: center;
+  height: 46px;
+  font-size: 14px;
+}
+
+.admin_dtl_table tbody th {
+  background-color: #FBFBFB;
+  height: 45px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding: 4px 8px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid rgb(116, 74, 161, 0.2);
+  vertical-align: middle;
+}
+
+.admin_dtl_table tbody td {
+  background-color: #fff;
+  height: 45px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding: 4px 8px;
+  font-size: 14px;
+  border: 1px solid rgb(116,74,161, 0.2);
+  vertical-align: middle;
+}
+
+/* Common Pagination */
+.admin_paginator .paginator-controls {
+  background-color: #fff;
+  border: 1px solid #E5E5EB;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.admin_paginator .paginator-controls button {
+  background-color: #fff;
+  border-right: 1px solid #E5E5EB;
+  /* border: 1px solid #E5E5EB; */
+  min-width: 40px;
+}
+
+.admin_paginator .paginator-controls button.current_page {
+  background-color: #8152DB;
+  color: #fff !important;
+}
+
+.admin_paginator .paginator-controls button:last-child {
+  border-right: none;
+}
+
+/* Admin Detail Modal */
+.admin_detail_modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.admin_detail_modal.wide .drawer {
+  max-width: 1200px;
+}
+
+.admin_detail_modal_ttl {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.admin_detail_modal_sub_ttl {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.admin_detail_modal_small_ttl {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+/* ToolTip Button */
+.tooltip-button {
+  background-color: #999999;
+  color: #fff;
+}
+
+.admin_accordion .accordion-item {
+  margin-bottom: 16px !important;
+  border: 1px solid #E5E4E4;
+}
+
+.admin_accordion .accordion-item .accordion-control {
+  padding: 10px 14px;
+  background-color: #E5E4E4;
+}
+
+/* 로그인 */
+.login_content {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+.login__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 80px;
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+}
+
+.login_header {
+  text-align: center;
+}
+
+.login_header .login_logo {
+  display: inline-block;
+  width: 202px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+
+.login_header .login_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.login_header h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.login_header p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.login_btn {
+  width: 100%;
+  position: relative;
+}
+
+.login_btn:before {
+  content: '';
+  display: inline-block;
+  width: 162px;
+  height: 32px;
+  position: absolute;
+  left: 50%;
+  top: -22px;
+  transform: translateX(-50%);
+  z-index: 10;
+  background: url(../_img/login_suggest.png) no-repeat center center / contain;
+}
+
+.btn_start_kakao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 51px;
+  background-color: #FEE500;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.btn_start_kakao:before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../_img/icon_kakao.svg) no-repeat center center / contain;
+}
+
+.btn_start_kakao span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.mockup {
+  width: 250px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.mockup__inner {
+  background: url(../_img/mockup.png) no-repeat center center / contain;
+  width: 100%;
+  height: 526px;
+  position: relative;
+}
+
+.mockup__inner .content {
+  position: absolute;
+  width: calc(100% - 45px);
+  left: 50%;
+  top: 62px;
+  transform: translateX(-50%);
+}
+
+.mockup__inner .content img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포인트루</title>
+  <!-- Favicon -->
+  <link rel="icon" href="./_img/common/logo.svg">
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- AOS CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- gsap & TWEENMAX -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="./_css/landing.css">
+</head>
+<body>
+  <div id="page-wrap">
+    <div id="contents-wrap">
+      <!-- 좌측 배너 영역 -->
+      <div class="pointrue_banner">
+        <div class="banner__inner">
+          <h1>
+            <span>포인트루</span>의 콘텐츠 부스팅을
+            직접 경험해 보세요!
+          </h1>
+          <p>아래의 버튼을 클릭하여 포인트루 서비스를 유튜브 채널 '소밥표류기"에 적용한 채널 부스팅 샘플에 참여해 보세요!</p>
+          <div class="btns">
+            <a href="#" class="btn_go"><span>샘플 참여하기</span></a>
+          </div>
+        </div>
+      </div>
+      <!-- 우측 콘텐츠 영역 -->
+      <div class="container">
+        <header id="header">
+          <div class="banner">
+            <div class="banner__contents">
+              <span>[오픈특가] 평생 혜택! 300명 한정 50% 할인</span>
+              <button type="button" class="btn_close" onclick="closeBanner()"></button>
+            </div>
+          </div>
+          <div class="header__inner">
+            <div class="logo">
+              <span class="logo_icon"></span>
+              <h6>pointrue</h6>
+            </div>
+          </div>
+        </header>
+        <main id="main">
+          <section class="main_sec1">
+            <div class="sec1_content1">
+              <div class="sec1_title">
+                <h5 data-aos="fade-up" data-aos-duration="1000">
+                  유튜브 (인스타, 블로그, 틱톡, X, 쓰레드)
+                </h5>
+                <h1 data-aos="fade-up" data-aos-duration="1000">
+                  채널성장 단짝 파트너<span>포인트루</span>
+                </h1>
+                <p class="sub_title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                  콘텐츠를 큐레이션 하여 알림톡으로 발송,<br>
+                  콘텐츠 부스팅(떡상) 실현!
+                </p>
+                <div class="start">
+                  <a href="#" class="btn_start" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1000">오픈특가 신청</a>
+                </div>
+              </div>
+              <div class="sec1_phone">
+                <div class="sec1_phone_inner">
+                  <img src="./_img/sec1_contents_img.png" class="contents" alt="">
+                  <img src="./_img/sec1_contents_bottom.png" class="bottom" alt="">
+                  <img src="./_img/sec1_contents_btn.png" class="btn" alt="">
+                  <div class="kakao_inner">
+                    <img src="./_img/sec1_kakao_bg.png" class="kakao_bg" alt="">
+                    <div class="kakao_contents">
+                      <img src="./_img/sec1_kakao_img01.png" class="kakao1" alt="">
+                      <img src="./_img/sec1_kakao_img02.png" class="kakao2" alt="">
+                      <img src="./_img/sec1_kakao_img03.png" class="kakao3" alt="">
+                    </div>
+                  </div>
+                </div>
+                <img src="./_img/sec1_contents_finger.png" class="finger" alt="">
+              </div>
+            </div>
+            <div class="sec1_content2"> 
+              <div class="title">
+                <span>동영상으로 간편하게!</span>
+                <h2>콘텐츠 부스팅 알려드립니다!</h2>
+              </div>
+              <div class="video">
+                <iframe src="https://www.youtube.com/embed/vlgd42j5oZo?si=sRiTbuRoNJslfWun&amp;controls=0" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="sec1_content3">
+              <div class="sec1_content3__inner">
+                <h3>
+                  어떻게 콘텐츠 부스팅(떡상)이<br>
+                  가능한가요?
+                </h3>
+                <div class="cnts">
+                  <p>
+                    정답은 포인트루의 핵심 노하우인<br>
+                    <b>‘부스팅 사이클’</b>에 있습니다.
+                  </p>
+                </div>
+                <div class="img">
+                  <img src="./_img/sec1_boosting_img.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="sec1_content4">
+              <div class="sec1_content4__inner">
+                <h3>
+                  <b>포인트루</b>콘텐츠 부스팅을<br>
+                  직접 경험해 보세요!
+                </h3>
+                <p>아래의 버튼을 클릭하여 포인트루 서비스를 유튜브 채널
+                ‘소밥표류기’에 적용한 채널 부스팅 샘플에 참여해 보세요!</p>
+                <div class="btns">
+                  <a href="#" class="btn_go"><span>샘플 참여하기</span></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main_sec2">
+            <div class="sec2__inner">
+              <div class="title">
+                <h2>
+                  포인트루의<br>
+                  <span>놀라운 장점 <b>4가지!</b></span>
+                </h2>
+                <p>7년의 온라인 판매 경험을 바탕으로 수많은<br>
+                시행착오 끝에 영혼을 갈아넣어 제대로 만들었습니다.</p>
+              </div>
+              <div class="sec2_benefits">
+                <div class="benefit_item">
+                  <span class="num">1</span>
+                  <div class="title">
+                    <h2>
+                      콘텐츠를 시리즈로 큐레이션하여<br>
+                      <span>알림톡으로 발송, <b>시청률 상승!</b></span>
+                    </h2>
+                    <p>
+                      동영상 및 다양한 SNS 콘텐츠를 테마별로 큐레이션하여, 구독자에게 시리즈 형식의 알림톡으로 발송
+                    </p>
+                  </div>
+                  <div class="bubble">
+                    <img src="./_img/sec2_bubble.png" alt="">
+                  </div>
+                  <div class="content">
+                    <div class="benefit1_example">
+                      <div class="tit">
+                        <span>[테마별 큐레이션 알림톡 사례]</span>
+                        <h4>이 가을, 놓치면 아쉬운 영화 5선</h4>
+                      </div>
+                      <div class="img">
+                        <img src="./_img/sec2_benefit1_img01.png" alt="">
+                      </div>
+                    </div>
+                    <div class="kakao_mockup_title purple">
+                      <h5><span>알림톡</span>이 시리즈로 발송됩니다</h5>
+                    </div>
+                    <div class="kakao_slide">
+                      <div class="kakao_slide_animation">
+                        <div id="phone1_mockup" class="phone_mockup">
+                          <div class="mockup__inner">
+                            <img src="./_img/sec3_benefits_img_list.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="benefit_item">
+                  <span class="num">2</span>
+                  <div class="title">
+                    <h2>
+                      <span>유튜브 알고리즘으로 <b>콘텐츠 떡상</b></span>
+                    </h2>
+                    <p>
+                      시청률이 급격히 상승하면, 유튜브 알고리즘이 해당 콘텐츠를
+                      유사 관심자 그룹에게 추천하여 떡상하게 됩니다.
+                    </p>
+                  </div>
+                  <div class="content">
+                    <div class="swiper-container kakao-swiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="kakao_swiper_thum">
+                            <img src="./_img/benefit2_swiper_01.png" alt="">
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="kakao_swiper_thum">
+                            <img src="./_img/benefit2_swiper_02.png" alt="">
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="kakao_swiper_thum">
+                            <img src="./_img/benefit2_swiper_03.png" alt="">
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="kakao_swiper_thum">
+                            <img src="./_img/benefit2_swiper_04.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="benefit_item">
+                  <span class="num">3</span>
+                  <div class="title">
+                    <h2>
+                      <span>
+                        <b>쉽고 편리한</b> 콘텐츠 신청 페이지 제작,<br>
+                        손쉽게 신청자 모집 가능 !<br>
+                        (랜딩페이지 역할)
+                      </span>
+                    </h2>
+                    <ul>
+                      <li>유튜브, 텍스트, 이미지를 자유롭게 구성하여 신청페이지 제작</li>
+                      <li>완성된 ‘신청페이지’는 검색엔진에서 검색 가능</li>
+                      <li>신청페이지 주소를 원하는 SNS에 공유</li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <div class="benefit3_phone">
+                      <div class="benefit3_phone__inner">
+                        <img src="./_img/benefit3_img01.png" class="active" alt="">
+                        <img src="./_img/benefit3_img02.png" alt="">
+                        <img src="./_img/benefit3_img03.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="benefit_item">
+                  <span class="num">4</span>
+                  <div class="title">
+                    <h2>
+                      콘텐츠 신청시, 구독자가<br>
+                      <span><b>내 고객 리스트</b>로 등록</span>
+                      <em>(광고메시지 발송)</em>
+                    </h2>
+                    <p>
+                      포인트루 콘텐츠 신청 페이지에서 구독자가 신청 하면
+                      고객 리스트(카톡 닉네임)로 등록되고 카톡 채널 구독자에게는
+                      광고 메시지를 자유롭게 발송
+                    </p>
+                  </div>
+                  <div class="content">
+                    <div class="img">
+                      <img src="./_img/sec2_benefit4_img.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main_sec3">
+            <div class="sec3_content1">
+              <h2>카톡 메세지 소개</h2>
+              <div class="sec3_kakao_list">
+                <div class="kakao_content">
+                  <div class="title">
+                    <h4>알림톡</h4>
+                  </div>
+                  <div class="kakao_txt_list">
+                    <ul>
+                      <li>알림톡은 카카오톡 채널을 추가하지 않은 이용자에게도 발송 가능한 정보성 메시지</li>
+                      <li>전송된 알림톡에서 ‘채널추가’ 버튼만 선택하면 쉽게 카톡채널 구독 가능</li>
+                      <li>가격이 문자대비 75%로 매우 저렴 (문자 25.9원 > 알림톡 6.5원, 국내 최저가)</li>
+                    </ul>
+                  </div>
+                  <div class="kakao_thum">
+                    <img src="./_img/sec3_kakao_img01.png" alt="">
+                  </div>
+                  <div class="kakao_send_notice">
+                    <h4>포인트루 알림톡 발송 방식</h4>
+                    <ul>
+                      <li>특정일 발송 : 예약된 특정한 날짜에 알림톡이 발송 됩니다.</li>
+                      <li>신청즉시 발송 : 고객이 신청즉시 미리 설정된 시간 간격으로 알림톡이 발송 됩니다.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="kakao_content">
+                  <div class="title">
+                    <h4>친구톡 (광고 메시지)</h4>
+                  </div>
+                  <div class="kakao_txt_list">
+                    <ul>
+                      <li>카카오톡 채널 구독자 대상으로 정보성 뿐만 아니라 광고성 메시지도 발송가능</li>
+                      <li>타깃 고객을 그룹핑하여 개인화된 광고 메시지 발송가능</li>
+                      <li>문자 대비 가격이 매우 저렴<br>
+                      장문문자 : 25.9원 > 텍스트형 친구톡 : 14원 (46% 저렴)<br>
+                      그림문자 : 60원 > 이미지형 친구톡 : 21원 (65% 저렴)</li>
+                    </ul>
+                  </div>
+                  <div class="kakao_thum">
+                    <img src="./_img/sec3_kakao_img02.png" alt="">
+                  </div>
+                </div>
+                  <div class="kakao_content">
+                    <div class="title">
+                      <h4>비즈니스 채널 인증</h4>
+                    </div>
+                    <div class="kakao_txt_list">
+                      <ul>
+                        <li>알림톡·친구톡 사용을 위해서는 비즈니스 채널 인증이 반드시 필요</li>
+                        <li>비즈니스 채널을 인증하면, 카톡 메시지 발송시 ‘사업자 정보 미확인’ 경고 문구가 나타나지 않아 고객 신뢰감 향상</li>
+                      </ul>
+                    </div>
+                    <div class="kakao_mockup_title">
+                      <h5><span>비즈니스 채널</span>과 일반 채널을 비교해보세요</h5>
+                    </div>
+                    <div class="kakao_mockup_animation">
+                      <div class="kakao_mockup_badge">
+                        <img src="./_img/sec3_swiper_badge2.png" alt="">
+                        <img src="./_img/sec3_swiper_badge1.png" alt="">
+                      </div>
+                      <div class="kakao_mockup__inner">
+                        <img src="./_img/sec3_swiper_img02.png" alt="">
+                        <img src="./_img/sec3_swiper_img01.png" alt="">
+                      </div>
+                    </div>
+                    <div class="kakao_mockup_title">
+                      <h5><span>비즈니스 채널</span>과 일반 채널을 비교해보세요</h5>
+                    </div>
+                    <div class="kakao_mockup_animation animation2">
+                      <div class="kakao_mockup_badge">
+                        <img src="./_img/sec3_swiper_badge2.png" alt="">
+                        <img src="./_img/sec3_swiper_badge1.png" alt="">
+                      </div>
+                      <div class="kakao_mockup__inner">
+                        <img src="./_img/sec3_swiper_img04.png" alt="">
+                        <img src="./_img/sec3_swiper_img03.png" alt="">
+                      </div>
+                    </div>
+                    <!-- <div class="kakao_swiper">
+                      <div class="swiper-container kakao-swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="kakao_swiper_thum">
+                              <img src="./_img/sec3_swiper_img01.png" alt="">
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="kakao_swiper_thum">
+                              <img src="./_img/sec3_swiper_img02.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </div>
+                    <div class="kakao_swiper">
+                      <div class="swiper-container kakao-swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="kakao_swiper_thum">
+                              <img src="./_img/sec3_swiper_img03.png" alt="">
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="kakao_swiper_thum">
+                              <img src="./_img/sec3_swiper_img04.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </div> -->
+                  </div>
+              </div>
+            </div>
+            <div class="sec3_content2">
+              <div class="title">
+                <h3>
+                  포인트루 시스템은<br>
+                  <b>이런 분들에게 추천 드립니다.</b>
+                </h3>
+                <p>
+                  자사 시스템을 개발해야만 가능했던<br>
+                  ‘알림톡 발송’ 기능을 혁신적인 방식으로 제공
+                </p>
+              </div>
+              <div class="sec3_recommend_list">
+                <div class="recommend_item">
+                  <div class="img">
+                    <img src="./_img/recommend_img01.png" alt="">
+                  </div>
+                  <div class="desc">
+                    <p>유튜브, 인스타, 블로그 등 소셜 미디어 관리자</p>
+                    <div class="cnts">
+                      <span>큐레이션된 콘텐츠를 알림톡으로 발송하여 콘텐츠 떡상을 경험 하세요.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommend_item">
+                  <div class="img">
+                    <img src="./_img/recommend_img02.png" alt="">
+                  </div>
+                  <div class="desc">
+                    <p>오픈채팅방 운영 강사</p>
+                    <div class="cnts">
+                      <span>생방송 강의 신청부터 생방송 링크, 녹화본 전송까지 자동으로 알림톡을 발송하여, 원스톱으로 처리하세요.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommend_item">
+                  <div class="img">
+                    <img src="./_img/recommend_img03.png" alt="">
+                  </div>
+                  <div class="desc">
+                    <p>쇼핑몰 운영자</p>
+                    <div class="cnts">
+                      <span>상품 소개 콘텐츠부터 구매 후 고객 관리까지, 손쉽게 알림톡을 발송해 보세요. 높은 클릭률과 고객 만족도를 경험할 수 있습니다.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="recommend_item">
+                  <div class="img">
+                    <img src="./_img/recommend_img04.png" alt="">
+                  </div>
+                  <div class="desc">
+                    <p>광고 운영자</p>
+                    <div class="cnts">
+                      <span>한번의 콘텐츠 신청을 통해 고객에게 여러개의 정보, 쿠폰 등을 알림톡으로 전달하여 ROAS를 극대화하세요.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main_sec4">
+            <div class="sec4_content1">
+              <div class="title">
+                <h1>
+                  평생 혜택!<br>
+                  300명 한정, 50% 할인
+                </h1>
+              </div>
+              <div class="sub_title">
+                <div class="sub_tit">
+                  <span>오픈특가</span>
+                  <div class="active_box">
+                    <span>연 10만원(50%할인)</span>
+                    <em>월 환산 8,670원</em>
+                  </div>
+                  <span>의</span>
+                </div>
+                <div class="sub_tit">
+                  <span>평생 혜택을 놓치지 마세요!</span>
+                </div>
+              </div>
+              <div class="btn">
+                <button type="button" class="btn_go">오픈특가 신청하기</button>
+              </div>
+              <ul class="hashtag_list">
+                <li>#새 동영상 카톡 알림</li>
+                <li>#고객 리스트 확보</li>
+              </ul>
+              <ul class="hashtag_list">
+                <li>#유튜브 알고리즘 적용</li>
+              </ul>
+              <div class="sec4_content1_cnts">
+                <ul>
+                  <li>
+                    오픈기념으로 <b>연간 사용료 10만원</b><br>
+                    (정상가의 50% 할인)의 혜택을 오직<br>
+                    300분에게만 드립니다!
+                  </li>
+                  <li>
+                    *카톡 메시지 발송 비용 별도<br>
+                    <b>
+                      알림톡 = 6.5원 (국내 최저가)<br>
+                      친구톡 = 14원(텍스트형), 21원(이미지형)
+                    </b>
+                  </li>
+                  <li>
+                    이번 기회를 놓치지 마세요!<br>
+                    300명 이후 혜택이 종료 됩니다.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sec4_content2">
+              <div class="top_img">
+                <img src="./_img/sec4_content2_bubble.png" alt="">
+              </div>
+              <div class="sec4_content2_card">
+                <em class="limit">300명 한정</em>
+                <div class="card_header">
+                  연 결제 선착순 50% 평생 할인
+                </div>
+                <div class="card_body">
+                  <em class="cost">200,000원</em>
+                  <p class="price">100,000원</p>
+                  <span>
+                    (월 환산: 8,670원)<br>
+                    ∙ 모든 금액은 VAT 별도
+                  </span>
+                </div>
+              </div>
+              <div class="sec4_primary_list">
+                <h3>주요기능</h3>
+                <ul>
+                  <li>콘텐츠 신청 페이지 작성 기능</li>
+                  <li>특정시간 및 순차적 시나리오 알림톡 발송기능</li>
+                  <li>알림톡 발송시 채널추가 유도 기능</li>
+                  <li>고객 등록(카톡 닉네임)과 그룹핑 기능</li>
+                  <li>그룹별 친구추가 고객에게 카톡 광고 메시지 발송</li>
+                </ul>
+              </div>
+              <div class="sec4_notice">
+                <div class="tit">유의 사항</div>
+                <ul>
+                  <li>위 가격은 1년 약정 계약으로 중도 해지시, 환급금은 할인 전 서비스 이용료 기준으로 차감 후 지급 됩니다. (자세한 사항은 이용약관 참조)</li>
+                  <li>사업자등록증 및 브랜드의 카톡채널 비즈니스 승인 필수</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="main_sec5">
+            <div class="sec5__inner">
+              <div class="title">
+                <span>Q&A</span>
+                <h1>더 궁금한 점이 있으신가요?</h1>
+              </div>
+              <div class="faq__inner">
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>유튜브 외의 다른 SNS에서도 콘텐츠 부스팅(떡상) 이 가능한가요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      네, 가능합니다. 유튜브와 동일한 원리로 인스타, 블로그, 틱톡, X, 쓰레드 등 다양한 SNS에서도 선별한 콘텐츠를 신청 페이지에서 소개하고, 콘텐츠 신청을 받아 알림톡으로 발송합니다. 이를 통해 클릭수가
+                      상승하고, 유사한 관심자들에게 추천되는 알고리즘에 의해 부스팅 효과(떡상)를 얻을 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>신청자 전화번호가 없는데, 어떻게 알림톡을 발송할 수 있나요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      알림톡 발송에는 전화번호가 필수입니다. 콘텐츠 신청 시 카카오톡 소셜 로그인을 통해 카카오톡에서 필요한 정보를 제공받아 알림톡을 발송할 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>사업자등록증이 없는데 사용할 수 있나요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      아니요, 사업자등록증이 필수입니다. 카톡 알림톡은 카카오에서 사업자등록이 있는 사업자에 한해 비즈니스 인증을 받은 경우에만 발송할 수 있습니다. 따라서 포인트루 서비스도 사업자등록증이 있는 분만 사용할 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>카톡채널 비즈니스 인증은 어떻게 받나요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      기존 카톡채널이 있으면, 경우 비즈니스 채널로 전환 합니다.
+                      [경로] 카카오톡 채널 관리자센터 > 관리 > 비즈니스 채널 신청 > 신청하기 <br>
+                      기존 카톡채널이 없으면, 아래 가이드를 참고하여 신규 비즈니스 채널을 개설 합니다.<br>
+                      <a href="https://kko.to/Qq2AnOim_k" target="_blank">비즈니스채널 신청 가이드 다운로드</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>카톡채널이 필수 인가요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      네, 필수입니다. 내 브랜드의 카톡채널에서 알림톡 및 친구톡이 발송되기 때문에 카톡채널은 반드시 필요합니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>기존 카톡채널을 활용할 수 있나요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      네, 기존 카톡채널을 비즈니스 채널로 인증받을 수 있다면 그대로 활용할 수 있습니다. 다만, 이 경우 기존 카톡채널명이 사업자등록증상의 이름과 일치하거나 연관성을 카카오 측에 증빙하여 비즈니스 채널로 인증받아야
+                      합니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>기존 고객 리스트를 업로드 할 수 있나요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      아니요, 기존 고객 리스트를 업로드할 수 없습니다. 콘텐츠 신청 페이지에서 신청을 받은 고객에게만 알림톡을 발송할 수 있습니다. 이는 카카오의 정책에 따라 해당 콘텐츠를 신청한 고객에게만 알림톡을 발송할 수 있기
+                      때문입니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>고객 리스트에는 어떤 정보가 있나요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      카톡 닉네임, 신청한 콘텐츠 제목, 고객의 카톡채널 추가 여부를 확인하실 수 있습니다. 단, 고객의 전화번호 등 개인정보는 제공되지 않습니다. 이는 개인정보 유출 및 오용을 방지하기 위함입니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>유료 콘텐츠를 판매할 수 있나요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      현재 콘텐츠 신청 페이지에서는 결제 기능이 제공되지 않습니다. 추후 업그레이드를 통해 결제 기능이 추가될 예정입니다. 다만, 예약 구매를 신청받고 알림톡을 통해 별도의 쇼핑몰 결제 링크를 발송할 수는 있습니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>콘텐츠 신청한 고객에게 알림톡을 제한없이 발송할 수 있나요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      제한이 있습니다. 첫 알림톡(신청완료 알림톡 제외)을 기준으로 2개월 이내 최대 10회의 알림톡을 발송 할 수 있으며 그 이후에는 발송이 불가합니다. 이러한 횟수 제한은 무료 콘텐츠에 대해 지속적인 알림톡 발송을
+                      제한하는 카카오정책으로 반드시 적용되야 합니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>고객이 카톡채널을 추가 하도록 어떻게 유도하나요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      알림톡이 발송되면, 내 채널을 구독하지 않은 사람에게만 '채널추가' 버튼이 보입니다. (이미 구독한 사람에게는 '채널추가' 버튼이 보이지 않습니다.) 이를 통해 양질의 콘텐츠를 발송하여 내 카톡채널의 구독을 유도할
+                      수 있습니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>알림톡 내용을 자유롭게 만들어 보낼 수 있나요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      아닙니다. 카카오 정책에 따라 사전에 검수된 템플릿으로만 발송할 수 있습니다. 현재 유튜버 전용, 강사 전용, 쇼핑몰 전용 알림톡 템플릿이 승인되어 사용할 수 있습니다. 추후 요청에 따라 다양한 알림톡 템플릿을
+                      승인받아 사용할 수 있게 할 예정입니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq">
+                  <div class="faq_quest">
+                    <div class="question">
+                      <span>Q.</span>
+                      <p>광고 메시지(친구톡)은 어떻게 보낼 수 있나요?</p>
+                    </div>
+                    <em class="btn_open"></em>
+                  </div>
+                  <div class="faq_answer">
+                    <p>
+                      포인트루 ‘마케팅메시지 발송’ 메뉴에서 내 카톡채널을 추가한 사람을 대상으로 신청자 그룹을 만들어 원하시는 내용으로 광고 메시지를 발송할 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer id="footer">
+          <div class="footer__inner">
+            <div class="scroll-top">
+              <span>TOP</span>
+            </div>
+            <div class="ft_info">
+              <div class="ft_top">
+                <div class="ft_logo">
+                  <h5>포인트루</h5>
+                  <div class="ft_btns">
+                    <a href="#" class="btn_consult">게시판</a>
+                    <a href="#" class="btn_consult">카카오톡 1:1 상담</a>
+                  </div>
+                  
+                </div>
+                <ul class="ft_menu">
+                  <li><a href="#">서비스 이용약관</a></li>
+                  <li><a href="#">개인정보 처리방침</a></li>
+                  <li><a href="#">사업자정보확인</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn_open_company">
+                <span>고마워브라더(주) 사업자정보</span>
+              </button>
+            </div>
+            <div class="ft_company-info">
+              <ul class="customer_center">
+                <li>고객센터 : 02-522-5229</li>
+                <li>운영시간 : 평일 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00) (토요일, 공휴일은 휴무)</li>
+              </ul>
+              <ul class="company_info">
+                <li>주소 : 경상남도 양산시 주남로 288 3207호</li>
+                <li>회사명 : 고마워브라더(주)</li>
+                <li>대표 : 최성민</li>
+                <li>사업자등록번호 : 175-81-02316</li>
+                <li>통신판매업신고: 제 2024-웅상출장소-0175호</li>
+                <li>개인정보 책임자: 여재혁</li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(function () {
+      AOS.init();
+
+      // 푸터 사업자정보 버튼
+      $('.btn_open_company').click(function () {
+        $('#contents-wrap').toggleClass('ft_open')
+        $(this).parent().siblings('.ft_company-info').slideToggle()
+        $("html, body").animate({ scrollTop: $(document).height() }, 500);
+      })
+
+      // 푸터 scrolltop
+      $("#footer .scroll-top").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 500);
+      });
+
+      // 지금 시작하기 버튼 클릭시 스크롤 이동
+      $('.sec1__inner .start .btn_start').click(function() {
+        var openOffset = $(".sec3_cost .cost_open").offset();
+        $("html, body").animate({ scrollTop: openOffset.top - 150 }, 1000); 
+      })
+
+      // 상단 배너 클릭시 스크롤 이동
+      $('#header .banner__contents').click(function() {
+        var purpleOffset = $("#purple_content").offset();
+        $("html, body").animate({ scrollTop: purpleOffset.top - 150 }, 1000); 
+      })
+
+      // window.addEventListener('scroll', function () {
+      //   if(window.scrollY > 313) {
+      //     animate()
+      //   }
+      // });
+
+      // Section5 FAQ 슬라이드
+      $('.faq_quest').click(function () {
+        $('.faq_answer').not($(this).siblings()).slideUp()
+        $(this).siblings().slideToggle()
+
+        $('.faq_quest').not($(this)).removeClass('active')
+        $(this).toggleClass('active')
+      })
+
+      const kakaoSwiper = new Swiper('.kakao-swiper', {
+        slidesPerView: 1,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets'
+        }
+      });
+
+      const kakaoSwiper2 = new Swiper('.kakao-swiper2', {
+        slidesPerView: 1.15,
+        // centeredSlides: true,
+        spaceBetween: 8,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      ScrollTrigger.create({
+        trigger: '.sec2_benefits .benefit_item:nth-child(1)',
+        start: 'top top',
+        end: "bottom center",
+        markers: false,
+        toggleClass: { targets: '#phone1_mockup', className: "active" },
+      });
+
+      setInterval(function() {
+        $('.kakao_mockup_animation').toggleClass('active')
+        $('.kakao_mockup_badge').toggleClass('active')
+      },3000)
+
+      let benefit3_index = 1;
+      setInterval(function () {
+        
+        
+        if (benefit3_index == 3) {
+          benefit3_index = 1;
+        } else {
+          benefit3_index = benefit3_index + 1
+        }
+
+        $(`.benefit3_phone__inner img:nth-child(${benefit3_index})`).addClass('active')
+        $(`.benefit3_phone__inner img:not(:nth-child(${benefit3_index}))`).removeClass("active")
+
+        
+      }, 3000)
+
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.sec1_content1',
+          pin: false,
+          start: 'top top',
+          end: '+=50%',
+          scrub: 3,
+          markers: false,
+          once: true,
+          onEnter: () => {
+            animate()
+          },
+        },
+      })
+      
+    })
+
+    function closeBanner() {
+      $('#header .banner').hide()
+    }
+
+    function animate() {
+        // 1. 배경이미지 밑으로 슬라이드
+        // 2. 슬라이드 될때 .contents는 제거 (.bottom 은 고정)
+        $('.sec1_phone_inner').addClass('active')
+
+        // 3. 끝까지 슬라이드되면 손가락 이미지 노출 & 커지는 애니메이션
+        setTimeout(function () {
+          $('.sec1_phone').addClass('finger_active')
+        }, 6000)
+
+        // 4. 카톡 알림톡 3개 순차적으로 발송
+        // 4-(1). 카톡 배경으로 변경
+        setTimeout(function () {
+          $('.sec1_phone').removeClass('finger_active')
+          $('.sec1_phone_inner .kakao_inner').addClass('active')
+        }, 8000)
+
+        // 4-(2). 카톡 1,2,3번 위로 슬라이드되면서 발송
+        setTimeout(function () {
+          $('.sec1_phone_inner').addClass("vibration")
+          setTimeout(function () {
+            $('.sec1_phone_inner').removeClass("vibration")
+          }, 500)
+          $('.sec1_phone_inner .kakao_inner .kakao_contents img.kakao1').addClass('active')
+        }, 9000)
+
+        setTimeout(function () {
+          $('.sec1_phone_inner').addClass("vibration")
+          setTimeout(function () {
+            $('.sec1_phone_inner').removeClass("vibration")
+          }, 500)
+          $('.sec1_phone_inner .kakao_inner .kakao_contents img.kakao1').removeClass('active')
+          $('.sec1_phone_inner .kakao_inner .kakao_contents img.kakao2').addClass('active')
+        }, 11000)
+
+        setTimeout(function () {
+          $('.sec1_phone_inner').addClass("vibration")
+          setTimeout(function () {
+            $('.sec1_phone_inner').removeClass("vibration")
+          }, 500)
+          $('.sec1_phone_inner .kakao_inner .kakao_contents img.kakao2').removeClass('active')
+          $('.sec1_phone_inner .kakao_inner .kakao_contents img.kakao3').addClass('active')
+        }, 13000)
+
+        setTimeout(function() {
+          $('.sec1_phone_inner').removeClass('active')
+          $('.sec1_phone').removeClass('finger_active')
+          $('.sec1_phone_inner').removeClass("vibration")
+          $('.sec1_phone_inner .kakao_inner').removeClass('active')
+          $('.sec1_phone_inner .kakao_inner .kakao_contents img.kakao1').removeClass('active')
+          $('.sec1_phone_inner .kakao_inner .kakao_contents img.kakao2').removeClass('active')
+          $('.sec1_phone_inner .kakao_inner .kakao_contents img.kakao3').removeClass('active')
+        }, 14000)
+
+        setTimeout(function () {
+          animate()
+        }, 15000)
+        
+      }
+  </script>
+</body>
+</html>

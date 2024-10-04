@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포인트루</title>
+  <!-- Favicon -->
+  <link rel="icon" href="./_img/common/logo.svg">
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- NiceSelect -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="./_css/common.css">
+  <script src="./_js/common.js" defer></script>
+</head>
+
+<body>
+  <div id="page-wrap">
+    <div id="contents-wrap">
+      <div class="pointrue_banner">
+        <div class="banner__inner">
+          <h1>
+            <span>포인트루</span>는 소상공인을 위한
+            최고의 플랫폼이 되기 위해
+            한걸음, 한걸음 나아가고 있습니다.
+          </h1>
+          <ul class="history">
+            <li>
+              <span class="date">2023년 5월</span>
+              <p>
+                초기창업패키지 사업 대상기업 선정<br>
+                <span class="light">(중소벤처기업부와 창업진흥원)</span>
+              </p>
+            </li>
+            <li>
+              <span class="date">2023년 12월</span>
+              <p>특허 출원 5개</p>
+            </li>
+            <li>
+              <span class="date">2021년~22년</span>
+              <p>
+                와디즈 크라우드 펀딩 성공<br>
+                <span class="light">(1차 489%, 2차 316%)</span>
+              </p>
+            </li>
+          </ul>
+          <div class="video_area">
+            <iframe src="https://www.youtube.com/embed/vlgd42j5oZo?si=sRiTbuRoNJslfWun&amp;controls=0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <header id="header">
+          <div class="header__inner">
+            <div class="left_icon">
+              <button type="button" class="btn_back"></button>
+            </div>
+            <h4 class="header_tit">샵 정보</h4>
+            <div class="right_icon">
+              <button type="button" class="btn_menu"></button>
+            </div>
+          </div>
+        </header>
+        <div class="sub-menu">
+          <div class="sub-menu__inner">
+            <div class="sub-menu__header">
+              <button type="button" class="btn_back"></button>
+            </div>
+            <div class="sub-menu__content">
+              <div class="sub-menu__info">
+                <div class="mart_img">
+                  <img src="./_img/partner_img.png" alt="">
+                </div>
+                <div class="info">
+                  <select name="" id="">
+                    <option value="">홍길동 마트</option>
+                    <option value="">A 마트</option>
+                    <option value="">B 마트</option>
+                  </select>
+                  <div class="link">
+                    <a href="#">https://pointrue/hongmart</a>
+                  </div>
+                  <a href="#" class="btn_admin">관리자페이지</a>
+                </div>
+              </div>
+              <div class="sub-menus">
+                <ul>
+                  <li><a href="#">파트너센터 홈</a></li>
+                  <li class="active"><a href="#">샵 정보</a></li>
+                  <li><a href="#">부가서비스 신청</a></li>
+                  <li><a href="#">서비스 이용내역</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main id="main" class="no_footer">
+          <div class="entry-renew__inner">
+            <div class="entry_payment-info">
+              <div class="tit">
+                <h3>결제정보</h3>
+                <div class="badge_list">
+                  <span class="badge navy">운영중</span>
+                </div>
+              </div>
+              <div class="payment_method">
+                <h5>결제방식</h5>
+                <div class="method">
+                  <h4>연결제</h4>
+                  <div>
+                    <span>다음 결제 예정일 : 2024.12.24</span>
+                    <!-- disabeld 상태 : disabled 클래스 추가 -->
+                    <button type="button" class="btn_change_payment" onclick="openModal('modal-change-year')"><span>연결제 전환
+                        (45%절약)</span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="auto_renew">
+                <div class="renew">
+                  <h5>자동갱신</h5>
+                  <div class="custom_toggle">
+                    <input type="checkbox" id="toggle" name="toggle_renew" hidden>
+                    <label for="toggle" class="toggle_switch">
+                      <span class="toggle_button"></span>
+                    </label>
+                  </div>
+                </div>
+                <p>서비스 이용 해지는 포인트루 고객센터로 연락 주시기 바랍니다.</p>
+              </div>
+            </div>
+            <div class="entry_info">
+              <form action="" class="form_entry">
+                <fieldset>
+                  <div class="input_entry-info">
+                    <h3>입점정보</h3>
+                    <div class="input_box">
+                      <label for="" class="input_tit">샵 이름</label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text" value="홍길동 쇼핑몰" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">샵 이용기간</label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text" value="2023.12.15 ~ 2024.12.14" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">샵 주소</label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text" value="https://pointrue/gildongmart" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">파트너 레벨</label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text" value="독립몰 파트너 Lv1" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">사업자 구분</label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text" value="법인사업자" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">상호</label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text" value="홍길동 마트" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">대표자명</label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text" value="홍길동" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">업태</label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text" value="유통" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">종목</label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text" value="전자상거래" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">사업자등록번호</label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text" value="123-45-5678" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">이메일주소</label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text" value="abc@pointrue.kr" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">대표자 전화번호</label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text" value="010-1234-5678" readonly>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">사업자등록증</label>
+                      <div class="input_flex file">
+                        <input type="text" value="honglicense.pdf" readonly>
+                        <button type="button" class="btn_preview">미리보기</button>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">사업자등록증</label>
+                      <div class="input_flex file">
+                        <input type="text" value="honglicense.pdf" readonly>
+                        <button type="button" class="btn_preview">미리보기</button>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+  <!-- 연결제 전환 모달 시작 -->
+  <div id="modal-change-year" class="modal modal_change_year">
+    <div class="modal__inner">
+      <div class="modal__close">
+        <span class="bar"></span>
+      </div>
+      <div class="modal__header">
+        <h3>연결제 전환</h3>
+      </div>
+      <div class="modal__content">
+        <p>
+          연결제로 전환시, 월결제의 남은 일수는 연결제 이용기간에 합산 됩니다. <span class="black">(1년+월 남은 일 수)</span>
+          <br><br>
+          <span class="point fw500">연결제를 진행 하시겠어요?</span>
+        </p>
+      </div>
+      <div class="modal__btn">
+        <button type="button" class="btn-w100p">결제하기</button>
+      </div>
+    </div>
+  </div>
+  <!-- 연결제 전환 모달 끝 -->
+
+  <!-- 자동갱신 취소 모달 시작 -->
+  <div id="modal-cancel-renew" class="modal modal_renew">
+    <div class="modal__inner">
+      <div class="modal__close">
+        <span class="bar"></span>
+      </div>
+      <div class="modal__header">
+        <h3>자동갱신 취소</h3>
+      </div>
+      <div class="modal__content">
+        <p>
+          자동갱신 취소 시, 만기일에 자동결제가 진행되지 않습니다. 포인트루 샵 이용료 미납 시 서비스 이용이 중지 됩니다.
+          <br><br>
+          <span class="black">자동갱신을 취소 하시겠습니까?</span>
+        </p>
+      </div>
+      <div class="modal__btn">
+        <button type="button" class="btn-w100p navy" onclick="closeModal('modal-cancel-renew')">확인</button>
+      </div>
+    </div>
+  </div>
+  <!-- 자동갱신 취소 모달 끝 -->
+  <!-- 자동갱신 선택 모달 시작 -->
+  <div id="modal-select-renew" class="modal modal_renew">
+    <div class="modal__inner">
+      <div class="modal__close">
+        <span class="bar"></span>
+      </div>
+      <div class="modal__header">
+        <h3>자동갱신 선택</h3>
+      </div>
+      <div class="modal__content">
+        <p>
+          <span class="point">자동갱신을 시작 하시겠습니까?</span>
+          <br><br>
+        </p>
+      </div>
+      <div class="modal__btn">
+        <button type="button" class="btn-w100p" onclick="closeModal('modal-select-renew')">확인</button>
+      </div>
+    </div>
+  </div>
+  <!-- 자동갱신 선택 모달 끝 -->
+</body>
+<script>
+  $('input[name=toggle_renew]').change(function(e) {
+    if(e.target.checked) {
+      openModal('modal-select-renew')
+    } else {
+      openModal('modal-cancel-renew')
+    }
+  })
+</script>
+
+</html>

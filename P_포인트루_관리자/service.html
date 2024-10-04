@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포인트루</title>
+  <!-- Favicon -->
+  <link rel="icon" href="./_img/common/logo.svg">
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- NiceSelect -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="./_css/common.css">
+  <script src="./_js/common.js" defer></script>
+</head>
+
+<body>
+  <div id="page-wrap">
+    <div id="contents-wrap">
+      <div class="pointrue_banner">
+        <div class="banner__inner">
+          <h1>
+            <span>포인트루</span>는 소상공인을 위한
+            최고의 플랫폼이 되기 위해
+            한걸음, 한걸음 나아가고 있습니다.
+          </h1>
+          <ul class="history">
+            <li>
+              <span class="date">2023년 5월</span>
+              <p>
+                초기창업패키지 사업 대상기업 선정<br>
+                <span class="light">(중소벤처기업부와 창업진흥원)</span>
+              </p>
+            </li>
+            <li>
+              <span class="date">2023년 12월</span>
+              <p>특허 출원 5개</p>
+            </li>
+            <li>
+              <span class="date">2021년~22년</span>
+              <p>
+                와디즈 크라우드 펀딩 성공<br>
+                <span class="light">(1차 489%, 2차 316%)</span>
+              </p>
+            </li>
+          </ul>
+          <div class="video_area">
+            <iframe src="https://www.youtube.com/embed/vlgd42j5oZo?si=sRiTbuRoNJslfWun&amp;controls=0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <header id="header">
+          <div class="header__inner">
+            <div class="left_icon">
+              <button type="button" class="btn_back"></button>
+            </div>
+            <h4 class="header_tit">서비스 이용내역</h4>
+            <div class="right_icon">
+              <button type="button" class="btn_menu"></button>
+            </div>
+          </div>
+        </header>
+        <div class="sub-menu">
+          <div class="sub-menu__inner">
+            <div class="sub-menu__header">
+              <button type="button" class="btn_back"></button>
+            </div>
+            <div class="sub-menu__content">
+              <div class="sub-menu__info">
+                <div class="mart_img">
+                  <img src="./_img/partner_img.png" alt="">
+                </div>
+                <div class="info">
+                  <select name="" id="">
+                    <option value="">홍길동 마트</option>
+                    <option value="">A 마트</option>
+                    <option value="">B 마트</option>
+                  </select>
+                  <div class="link">
+                    <a href="#">https://pointrue/hongmart</a>
+                  </div>
+                  <a href="#" class="btn_admin">관리자페이지</a>
+                </div>
+              </div>
+              <div class="sub-menus">
+                <ul>
+                  <li><a href="#">파트너센터 홈</a></li>
+                  <li><a href="#">샵 정보</a></li>
+                  <li><a href="#">부가서비스 신청</a></li>
+                  <li class="active"><a href="#">서비스 이용내역</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main id="main">
+          <div class="service__inner">
+            <div class="service_info">
+              <div class="badge_list">
+                <span class="badge pay">연결제</span>
+                <span class="badge navy">운영중</span>
+              </div>
+              <span class="date">2023.09.18 ~ 2024.09.17</span>
+            </div>
+            <div class="service__list">
+              <div class="service__item">
+                <div class="tit">
+                  <h3>포인트루 샵 이용 서비스 (월결제)</h3>
+                  <!-- 해지일 때 minus 클래스 추가 -->
+                  <span class="price minus">-10,000원</span>
+                </div>
+                <div class="desc">
+                  <p class="range_date"></p>
+                  <ul>
+                    <li>2023.12.18</li>
+                    <li>샵 이용 서비스 해지</li>
+                    <li class="navy">해지완료</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="service__item">
+                <div class="tit">
+                  <h3>샵 세팅을 위한 1:1 맞춤 지원</h3>
+                  <span class="price">30,000원</span>
+                </div>
+                <div class="desc">
+                  <p class="range_date">(2023.09.18 ~ 2023.10.17)</p>
+                  <ul>
+                    <li>2023.12.18</li>
+                    <li>부가서비스</li>
+                    <li class="red">해지신청</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="service__item">
+                <div class="tit">
+                  <h3>포인트루 샵 이용 서비스 (연결제)</h3>
+                  <span class="price">200,000원</span>
+                </div>
+                <div class="desc">
+                  <p class="range_date">(2023.09.18 ~ 2023.10.17)</p>
+                  <ul>
+                    <li>2023.12.18</li>
+                    <li>부가서비스</li>
+                    <li class="blue">결제완료</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="service__item">
+                <div class="tit">
+                  <h3>샵 세팅을 위한 1:1 맞춤 지원</h3>
+                  <span class="price">30,000원</span>
+                </div>
+                <div class="desc">
+                  <p class="range_date">(2023.09.18 ~ 2023.10.17)</p>
+                  <ul>
+                    <li>2023.12.18</li>
+                    <li>부가서비스</li>
+                    <li class="blue">결제완료</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="service__item">
+                <div class="tit">
+                  <h3>샵 세팅을 위한 1:1 맞춤 지원</h3>
+                  <span class="price">30,000원</span>
+                </div>
+                <div class="desc">
+                  <p class="range_date">(2023.09.18 ~ 2023.10.17)</p>
+                  <ul>
+                    <li>2023.12.18</li>
+                    <li>부가서비스</li>
+                    <li class="blue">결제완료</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="service__item">
+                <div class="tit">
+                  <h3>샵 세팅을 위한 1:1 맞춤 지원</h3>
+                  <span class="price">30,000원</span>
+                </div>
+                <div class="desc">
+                  <p class="range_date">(2023.09.18 ~ 2023.10.17)</p>
+                  <ul>
+                    <li>2023.12.18</li>
+                    <li>부가서비스</li>
+                    <li class="blue">결제완료</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer id="footer">
+          <div class="footer__inner">
+            <div class="scroll-top">
+              <span>TOP</span>
+            </div>
+            <div class="ft_info">
+              <div class="ft_top">
+                <div class="ft_logo">
+                  <h5>포인트루</h5>
+                  <a href="#" class="btn_consult">카카오톡 1:1 상담</a>
+                </div>
+                <ul class="ft_menu">
+                  <li><a href="#">서비스 이용약관</a></li>
+                  <li><a href="#">개인정보 처리방침</a></li>
+                  <li><a href="#">사업자정보확인</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn_open_company">
+                <span>고마워브라더(주) 사업자정보</span>
+              </button>
+            </div>
+            <div class="ft_company-info">
+              <ul class="customer_center">
+                <li>고객센터 : 1000-0000</li>
+                <li>운영시간 : 평일 09:00 ~ 18:00 (점심시간 12:00 ~ 13:00) (토요일, 공휴일은 휴무)</li>
+              </ul>
+              <ul class="company_info">
+                <li>주소 : 경상남도 양산시 주남로 288 3207호</li>
+                <li>회사명 : 고마워브라더(주)</li>
+                <li>대표 : 최성민</li>
+                <li>사업자등록번호 : 175-81-02316</li>
+                <li>통신판매업신고 : 제2021-서울서초-2099호</li>
+                <li>개인정보 책임자 : 홍길동</li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포인트루</title>
+  <!-- Favicon -->
+  <link rel="icon" href="./_img/common/logo.svg">
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- NiceSelect -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="./_css/common.css">
+  <script src="./_js/common.js" defer></script>
+</head>
+
+<body>
+  <div id="page-wrap">
+    <div id="contents-wrap">
+      <div class="pointrue_banner">
+        <div class="banner__inner">
+          <h1>
+            <span>포인트루</span>는 소상공인을 위한
+            최고의 플랫폼이 되기 위해
+            한걸음, 한걸음 나아가고 있습니다.
+          </h1>
+          <ul class="history">
+            <li>
+              <span class="date">2023년 5월</span>
+              <p>
+                초기창업패키지 사업 대상기업 선정<br>
+                <span class="light">(중소벤처기업부와 창업진흥원)</span>
+              </p>
+            </li>
+            <li>
+              <span class="date">2023년 12월</span>
+              <p>특허 출원 5개</p>
+            </li>
+            <li>
+              <span class="date">2021년~22년</span>
+              <p>
+                와디즈 크라우드 펀딩 성공<br>
+                <span class="light">(1차 489%, 2차 316%)</span>
+              </p>
+            </li>
+          </ul>
+          <div class="video_area">
+            <iframe src="https://www.youtube.com/embed/vlgd42j5oZo?si=sRiTbuRoNJslfWun&amp;controls=0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <header id="header">
+          <div class="header__inner">
+            <div class="left_icon">
+              <button type="button" class="btn_back"></button>
+            </div>
+            <h4 class="header_tit">입점하기</h4>
+            <div class="right_icon">
+            </div>
+          </div>
+        </header>
+        <main id="main" class="no_footer">
+          <div class="entry__inner">
+            <div class="entry_payment">
+              <form action="" class="form_entry">
+                <fieldset>
+                  <div class="input_entry-info">
+                    <h3>입점정보 입력</h3>
+                    <div class="input_box">
+                      <label for="" class="input_tit">샵 이름&nbsp;<span class="asterisk">*</span></label>
+                      <div class="input_flex">
+                        <div class="input">
+                          <input type="text" placeholder="예&#41; 홍길동 쇼핑몰">
+                          <button type="button" class="btn_delete"></button>
+                        </div>
+                        <button type="button" class="btn_check">중복체크</button>
+                      </div>
+                      <p class="input_txt">
+                        샵 이름은 인터넷 브라우저 상단에 출력되는 문구이며 검색 시 검색결과의 제목부분에 나타납니다. 간단명료하면서 샵을 잘 표현하는 이름을 작성하는 것이 좋습니다.
+                      </p>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">샵 주소&nbsp;<span class="asterisk">*</span></label>
+                      <div class="input_flex">
+                        <span class="txt">https://pointrue/</span>
+                        <div class="input">
+                          <input type="text" placeholder="예&#41; gildongmart">
+                          <button type="button" class="btn_delete"></button>
+                        </div>
+                      </div>
+                      <p class="input_txt flex">
+                        <span>
+                          포인트루 주소 뒤에 붙는 샵의 고유 url 입니다. 샵의 영문 이름을 사용할 것을 추천 드립니다.
+                        </span>
+                        <button type="button" class="btn_check">중복체크</button>
+                      </p>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">사업자 구분</label>
+                      <div class="input_flex radio">
+                        <div class="custom-radio">
+                          <label for='type_chk1'>
+                            <input type='radio' id='type_chk1' name="chk_type" checked><em></em>
+                            개인 사업자
+                          </label>
+                        </div>
+                        <div class="custom-radio">
+                          <label for='type_chk2'>
+                            <input type='radio' id='type_chk2' name="chk_type"><em></em>
+                            법인 사업자
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">상호&nbsp;<span class="asterisk">*</span></label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text">
+                          <button type="button" class="btn_delete"></button>
+                        </div>
+                      </div>
+                      <p class="input_txt">
+                        사업자등록증의 ‘상호명'을 입력해 주세요.
+                      </p>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">대표자명&nbsp;<span class="asterisk">*</span></label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text">
+                          <button type="button" class="btn_delete"></button>
+                        </div>
+                      </div>
+                      <p class="input_txt">
+                        사업자등록증의 ‘대표자명’을 입력해 주세요.
+                      </p>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">업태&nbsp;<span class="asterisk">*</span></label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text">
+                          <button type="button" class="btn_delete"></button>
+                        </div>
+                      </div>
+                      <p class="input_txt">
+                        사업자등록증의 ‘업태’를 입력해 주세요.
+                      </p>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">종목&nbsp;<span class="asterisk">*</span></label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text">
+                          <button type="button" class="btn_delete"></button>
+                        </div>
+                      </div>
+                      <p class="input_txt">
+                        사업자등록증의 ‘종목’을 입력해 주세요.
+                      </p>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">사업자등록번호&nbsp;<span class="asterisk">*</span></label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="text" placeholder="예&#41; 000-00-00000">
+                          <button type="button" class="btn_delete"></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">이메일주소&nbsp;<span class="asterisk">*</span></label>
+                      <div class="input_only">
+                        <div class="input">
+                          <input type="email" placeholder="예&#41; partner@pointrue.kr">
+                          <button type="button" class="btn_delete"></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">대표자 전화번호&nbsp;<span class="asterisk">*</span></label>
+                      <div class="input_flex">
+                        <div class="input">
+                          <input type="number">
+                          <button type="button" class="btn_delete"></button>
+                        </div>
+                        <button type="button" class="btn_confirm">휴대폰 본인 확인</button>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">사업자등록증&nbsp;<span class="asterisk">*</span></label>
+                      <div class="input_flex">
+                        <div class="custom_file">
+                          <label for="file">파일선택</label>
+                          <input type="file" id="file">
+                        </div>
+                        <span class="no_file" style="display: none;">선택된 파일 없음</span>
+                        <div class="selected_file">
+                          <span>사업자등록증 이미지 파일.jpg</span>
+                          <button type="button" class="btn_delete"></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input_box">
+                      <label for="" class="input_tit">통장사본&nbsp;<span class="asterisk">*</span></label>
+                      <div class="input_flex">
+                        <div class="custom_file">
+                          <label for="file">파일선택</label>
+                          <input type="file" id="file">
+                        </div>
+                        <span class="no_file" style="display: none;">선택된 파일 없음</span>
+                        <div class="selected_file">
+                          <span>사업자등록증 이미지 파일.jpg</span>
+                          <button type="button" class="btn_delete"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pay_entry">
+                    <div class="select_pay-entry">
+                      <h3>포인트루 샵 이용료 결제하기</h3>
+                      <div class="select_payment">
+                        <div class="custom-radio">
+                          <label for='chk1'>
+                            <input type='radio' id='chk1' name="chk" checked><em></em>
+                            <div>
+                              월 결제 <span class="point">30,000</span>원 <small>(이용기간 : 1개월)</small>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="custom-radio">
+                          <label for='chk2' class="flex-start">
+                            <input type='radio' id='chk2' name="chk"><em></em>
+                            <div>
+                              연 결제 <span class="point">200,000</span>원 <small>(이용기간 : 1년)</small>
+                              <p>
+                                <span class="gray">360,000원 ></span>
+                                <span class="black">200,000원</span>
+                                <span class="orange">(45% 할인)</span>
+                              </p>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment_notice">
+                      <h4>유의사항</h4>
+                      <ul>
+                        <li>이용기간 만료 시 자동 갱신되며, 갱신을 원하지 않으실 경우 만료 전에 ‘자동갱신 취소’ 를 신청해 주세요</li>
+                        <li>서비스 해지시에는 할인 전 정가 기준으로 서비스 사용 기간을 적용하여 잔여 금액 계산 후 환불 됩니다. 최종 환불시에는 환불 수수료 10%가 발생합니다. 자세한 사항은
+                          <button type="button" class="btn_text" onclick="openModal('modal-refund-guide')">환불 가이드</button>를
+                          참조해 주시기 바랍니다.</li>
+                        <li>알림톡 및 문자 발송 비용은 별도 (알림톡 O원/건, 친구톡 O원/건)</li>
+                        <li>PG 통합결제 가입비 무료</li>
+                        <li>PG 가입을 위한 보증보험 가입 필요</li>
+                        <li>PG 결제 수수료 : 카드 3.2%, 간편결제 3.3%, 가상계좌 250원/건</li>
+                        <li>포인트루 판매 수수료 없음</li>
+                        <li>사업자등록증 및 브랜드의 카톡채널 비즈니스 승인 필수</li>
+                      </ul>
+                    </div>
+                    <div class="btn-submit_area">
+                      <button type="button" class="btn-w100p">샵 이용료 결제</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+  <!-- 환불 가이드 모달 시작 -->
+  <div id="modal-refund-guide" class="modal modal_refund_guide">
+    <div class="modal__inner">
+      <div class="modal__close">
+        <span class="bar"></span>
+      </div>
+      <div class="modal__header">
+        <h3>환불 가이드</h3>
+      </div>
+      <div class="modal__content">
+        <p>결제 방식에 따라서 아래와 같이 환불액이 산정 됩니다.</p>
+        <div class="refund">
+          <h5>[월결제]</h5>
+          <div>
+            <p>결제 7일 이내, 사용 내역 없을 경우 : 전액 환불</p>
+            <p>결제 7일 초과 또는 사용 내역 있을 경우</p>
+            <p class="ml15">환불액 = 결제금액 - 차감금액 - 위약금</p>
+            <p class="ml15">(15일 초과 : 환불 불가)</p>
+          </div>
+          <ul class="refund_list">
+            <li>차감금액 = 7일 초과 ~ 서비스 기간 ½ 이하인 경우, 경과한 서비스 이용료</li>
+            <li>위약금 = (결제금액 - 차감금액)*10%</li>
+          </ul>
+        </div>
+        <div class="refund">
+          <h5>[연결제]</h5>
+          <div>
+            <p>결제 7일 이내, 사용 내역 없을 경우 : 전액 환불</p>
+            <p>결제 7일 초과 또는 사용 내역 있을 경우</p>
+            <p class="ml15">환불액 = 결제금액 - 차감금액 - 위약금</p>
+            <p class="ml15">* 차감금액 = 계약기간 1/10 경과전에는 할인전 이용료의 1/10,</p>
+            <p>계약기간 2/10 경과전에는 할인전 이용료의 2/10,</p>
+            <p>계약기간 3/10 경과전에는 할인전 이용료의 3/10,</p>
+            <p>계약기간 4/10 경과전에는 할인전 이용료의 4/10,</p>
+            <p>계약기간 5/10 경과전에는 할인전 이용료의 5/10,</p>
+            <p>계약기간 6/10 경과전에는 할인전 이용료의 6/10,</p>
+            <p>계약기간 7/10 경과전에는 할인전 이용료의 7/10,</p>
+            <p>계약기간 8/10 경과전에는 할인전 이용료의 2/10,</p>
+            <p>계약기간 9/10 경과후 환불 불가</p>
+            <p>* 위약금 = (결제금액 - 차감금액)*10%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 환불 가이드 모달 끝 -->
+</body>
+
+<script>
+  // 임시
+  $('.selected_file .btn_delete').click(function() {
+    $(this).parents().siblings('.no_file').show()
+    $(this).parent('.selected_file').hide()
+  })
+</script>
+
+</html>
